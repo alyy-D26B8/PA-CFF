@@ -1,0 +1,27 @@
+expname = pretraining
+rootdir = /root/...  # REPLACE THIS with YOUR PATH.
+render_stride = 2
+distributed = False
+
+train_dataset = spaces+ibrnet_collected+google_scanned
+dataset_weights = [0.3, 0.6, 0.1]
+eval_dataset = llff_test
+eval_scenes = [trex, fern, flower, leaves, room, fortress, horns, orchids]
+
+num_source_views = 3
+N_rand = 1024
+lrate_feature = 0.001
+lrate_mlp = 0.0005
+lrate_decay_factor = 0.5
+lrate_decay_steps = 50000
+n_iters = 250000
+
+chunk_size = 2048
+N_importance = 64
+N_samples = 64
+inv_uniform = True
+white_bkgd = False
+
+i_img = 2000
+i_print = 100
+i_weights = 5000

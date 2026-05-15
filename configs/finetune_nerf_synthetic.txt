@@ -1,0 +1,48 @@
+expname = finetune-nerf_synthetic
+rootdir = /root/...  # REPLACE THIS with YOUR PATH.
+render_stride = 2
+distributed = False
+
+## Load pretrained model
+ckpt_path = /root/...  # REPLACE THIS with YOUR PATH.
+no_load_opt = True
+no_load_scheduler = True
+
+## Dataset — single scene
+train_dataset = nerf_synthetic
+train_scenes = lego
+eval_dataset = nerf_synthetic
+eval_scenes = lego
+
+num_source_views = 3
+N_rand = 1024
+
+## CFF settings
+use_cff = True
+cff_resolutions = [32, 64]
+cff_feat_dim = 8
+cff_out_dim = 16
+cff_reg_weight = 0.01
+lrate_cff = 0.001
+
+## Fine-tune learning rates
+lrate_feature = 0.0005
+lrate_mlp = 0.0002
+lrate_decay_factor = 0.5
+lrate_decay_steps = 10000
+n_iters = 20000
+
+## Freeze options
+freeze_feature_net = False
+freeze_ibrnet = False
+
+## Rendering settings
+chunk_size = 4096
+N_importance = 64
+N_samples = 64
+inv_uniform = False
+white_bkgd = True
+
+i_img = 1000
+i_print = 100
+i_weights = 2000

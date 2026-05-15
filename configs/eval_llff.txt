@@ -1,0 +1,23 @@
+expname = eval_llff
+rootdir = /root/...  # REPLACE THIS with YOUR PATH.
+ckpt_path = /root/...  # REPLACE THIS with YOUR PATH.
+no_reload = False
+
+## Dataset
+eval_dataset = llff_test
+eval_scenes = fern
+
+num_source_views = 3
+
+## CFF settings (must match fine-tune config exactly)
+use_cff = True
+cff_resolutions = [32, 64]
+cff_feat_dim = 8
+cff_out_dim = 16
+
+## Rendering settings
+chunk_size = 4096
+N_samples = 64
+N_importance = 64
+inv_uniform = True
+white_bkgd = False
