@@ -2,7 +2,8 @@ Download the datasets in Readme and follow the structure below.
 
 |--data/
     |--spaces_dataset/
-    |--ibrnet_collected/
+    |--ibrnet_collected_1/
+    |--ibrnet_collected_2/
     |--google_scanned_objects/
     |--nerf_synthetic/
     |--nerf_llff_data/
