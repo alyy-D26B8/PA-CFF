@@ -16,7 +16,7 @@ pip install einops imageio-ffmpeg opencv-python scikit-image scipy tensorboard t
 The organization of the datasets should be consistent with the structure below.
 ```
 |--data/
-    |--spaces/
+    |--spaces_dataset/
     |--ibrnet_collected/
     |--google_scanned_objects/
 ```
