@@ -1,7 +1,7 @@
 Download the datasets in Readme and follow the structure below.
 
 |--data/
-    |--spaces/
+    |--spaces_dataset/
     |--ibrnet_collected/
     |--google_scanned_objects/
     |--nerf_synthetic/
