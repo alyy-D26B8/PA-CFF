@@ -17,7 +17,8 @@ The organization of the datasets should be consistent with the structure below.
 ```
 |--data/
     |--spaces_dataset/
-    |--ibrnet_collected/
+    |--ibrnet_collected_1/
+    |--ibrnet_collected_2/
     |--google_scanned_objects/
 ```
 - [Spaces](https://github.com/augmentedperception/spaces_dataset)
