@@ -61,7 +61,6 @@ class IBRNetModel(object):
                 feat_dim=getattr(args, 'cff_feat_dim', 8),
                 out_dim=getattr(args, 'cff_out_dim', 16),
                 bbox_size=getattr(args, 'cff_bbox_size', 4.0),
-                gate_init=getattr(args, 'cff_gate_init', 0.0),
             ).to(device)
             print('[CFF] Enabled — resolutions={}, feat_dim={}, out_dim={}, bbox={}, params={:,}'.format(
                 args.cff_resolutions, args.cff_feat_dim, args.cff_out_dim, args.cff_bbox_size,
