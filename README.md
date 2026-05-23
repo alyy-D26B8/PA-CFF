@@ -1,4 +1,4 @@
-# Position-Aware Contextual Feature Fields for Few-Shot Neural Radiance Field Fine-Tuning
+# Position-Aware Contextual Feature Enhancement for Sparse-View Novel View Synthesis
 ---
 This repository contains the implementation of the method described in the paper "Position-Aware Contextual Feature Enhancement for Sparse-View Novel View Synthesis". Submitted to Machine Vision and Applications (Springer Journal). If you use this code, please cite our manuscript.
 ## Installation
